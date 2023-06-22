@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Asisstant</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+<body>
+    <div>
+        <p>This is what i found:</p>
+        <p>{{ input_text }}</p>
+        <br>
+        <p class="answer-box">{{ odgovor }}</p>
+
+        <br>
+        <button onclick="location.href='/start'">Go back</button>
+        
+    </div>
+</body>
+</html>
